@@ -39,7 +39,8 @@ class _ThermometerPainter extends CustomPainter {
   }
 
   @override
-  bool shouldRepaint(CustomPainter oldDelegate) => false;
+  bool shouldRepaint(_ThermometerPainter oldDelegate) =>
+      oldDelegate.fullness != fullness;
 }
 
 class Thermometer extends StatelessWidget {
